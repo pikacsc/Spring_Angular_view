@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+  <fieldset>
+  <legend>회원가입</legend>
+  <form>
+    <div class="form-group">
+      <label for="name">이름:</label>
+      <input [(ngModel)]="user.name" placeholder="이름을 입력하세요" name="name" class="form-control" id="name" required="required">
+    </div>
+    <div class="form-group">
+      <label for="id">ID:</label>
+      <input [(ngModel)]="user.id" placeholder="아이디를 입력하세요" name="id" class="form-control" id="id" required="required">
+    </div>
+    <div class="form-group">
+      <label for="pwd">비밀번호:</label>
+      <input [(ngModel)]="user.pwd" placeholder="비밀번호를 입력하세요" name="pwd" class="form-control" id="pwd" required="required">
+    </div>
+    <div class="form-group">
+      <label for="email">Email 주소:</label>
+      <input type="email" [(ngModel)]="user.email" placeholder="Email" name="email" class="form-control" id="email" required="required">
+    </div>
+    <button class="btn btn-success" (click)="createUser()">가입하기</button>
+    <button class="btn btn-reset" type="reset">초기화</button>
+  </form>
+  </fieldset>
+</div>
